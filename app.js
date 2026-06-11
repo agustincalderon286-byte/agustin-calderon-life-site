@@ -11,6 +11,22 @@ const resultNote = document.getElementById("resultNote");
 const quoteTextForm = document.getElementById("quoteTextForm");
 const quotePhone = "+17737984107";
 
+function buildSmsHref(message = "") {
+  const safeMessage = String(message || "").trim();
+  return safeMessage
+    ? `sms:${quotePhone}?&body=${encodeURIComponent(safeMessage)}`
+    : `sms:${quotePhone}`;
+}
+
+function bindTextLinks() {
+  const links = document.querySelectorAll("[data-text-link]");
+
+  links.forEach((link) => {
+    const template = String(link.dataset.textTemplate || "").trim();
+    link.href = buildSmsHref(template);
+  });
+}
+
 function estimateCoverage({ age, income, dependents, goal }) {
   const multipliers = {
     family: 10,
@@ -84,7 +100,8 @@ function openQuoteText(event) {
     "I would like to get guidance on my life insurance options."
   ].join(" ");
 
-  window.location.href = `sms:${quotePhone}?&body=${encodeURIComponent(message)}`;
+  window.location.href = buildSmsHref(message);
 }
 
+bindTextLinks();
 quoteTextForm.addEventListener("submit", openQuoteText);

@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="announcement-bar">
+      <p>Direct text quote lane</p>
+      <p>Start by text message</p>
+      <p>Personal guidance from Agustin Calderon</p>
+    </div>
+
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#top">
@@ -28,9 +34,16 @@
         </a>
         <nav class="topnav">
           <a href="#plans">Plans</a>
+          <a href="#text-lane">Text lane</a>
           <a href="#estimator">Estimator</a>
           <a href="#faq">FAQ</a>
-          <a class="nav-cta" href="sms:+17737984107?&body=Hi%20Agustin%2C%20I%20would%20like%20a%20life%20insurance%20quote.">
+          <a
+            class="nav-cta"
+            href="#"
+            data-text-link
+            data-text-placement="header_nav"
+            data-text-template="Hi Agustin, I would like a life insurance quote and I want to compare my options."
+          >
             Text for a quote
           </a>
         </nav>
@@ -49,11 +62,20 @@
             <div class="hero-actions">
               <a
                 class="button button-primary"
-                href="sms:+17737984107?&body=Hi%20Agustin%2C%20I%20want%20a%20life%20insurance%20quote."
+                href="#"
+                data-text-link
+                data-text-placement="hero_primary"
+                data-text-template="Hi Agustin, I want a life insurance quote. I would like help comparing the right coverage for my situation."
               >
                 Text for a quote
               </a>
               <a class="button button-secondary" href="#estimator">Check your coverage</a>
+            </div>
+            <div class="hero-badges">
+              <span>Start by text</span>
+              <span>Fast direct follow-up</span>
+              <span>Keep everything in one message thread</span>
+              <span>Personal help, not a cold form</span>
             </div>
             <ul class="trust-list">
               <li>Text directly with Agustin</li>
@@ -100,6 +122,74 @@
               <p>To compare coverage clearly, ask questions directly, and get help finding the right fit.</p>
             </div>
           </aside>
+        </section>
+
+        <section class="section section-text-lane" id="text-lane">
+          <div class="section-heading">
+            <p class="eyebrow">Text Quote Lane</p>
+            <h2>Text first and keep the quote conversation moving faster.</h2>
+            <p>
+              This page is built for people who would rather send a direct message than get stuck
+              in a cold contact form. One text can start the whole quote conversation.
+            </p>
+          </div>
+
+          <div class="text-lane-grid">
+            <article class="text-lane-card text-lane-card-dark">
+              <p class="panel-eyebrow">What to text first</p>
+              <h3>Keep the first message simple and useful.</h3>
+              <ul class="mini-list">
+                <li>Your age range</li>
+                <li>The type of policy you want to compare</li>
+                <li>Your main goal: family protection, final expenses, or legacy</li>
+                <li>Any urgency or questions you already have</li>
+              </ul>
+              <a
+                class="button button-gold"
+                href="#"
+                data-text-link
+                data-text-placement="text_lane_panel"
+                data-text-template="Hi Agustin, I want to compare life insurance options. My age range is [your age range] and my main goal is [family protection / final expenses / legacy]."
+              >
+                Open text message
+              </a>
+            </article>
+
+            <article class="text-lane-card">
+              <p class="panel-eyebrow">Why this works</p>
+              <h3>Direct follow-up path instead of losing the lead.</h3>
+              <div class="hero-checks hero-checks-single">
+                <article class="check-card">
+                  <h3>Faster first contact</h3>
+                  <p>
+                    A text message is usually the easiest first step for someone comparing
+                    coverage.
+                  </p>
+                </article>
+                <article class="check-card">
+                  <h3>Clearer next step</h3>
+                  <p>
+                    Once the conversation starts, Agustin can guide the lead toward the right type
+                    of quote.
+                  </p>
+                </article>
+                <article class="check-card">
+                  <h3>One message thread</h3>
+                  <p>
+                    The lead does not have to restart the conversation or wait for a generic email
+                    reply.
+                  </p>
+                </article>
+                <article class="check-card">
+                  <h3>Built for mobile</h3>
+                  <p>
+                    This flow works especially well for people browsing on their phone and ready to
+                    ask questions.
+                  </p>
+                </article>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section class="proof-strip">
@@ -180,6 +270,39 @@
               <p>
                 Build a plan that supports your family’s future goals with options that may
                 include term life, final expense, indexed universal life, and permanent coverage.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-light">
+          <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>A simple text-message flow for life insurance leads.</h2>
+          </div>
+          <div class="feature-grid feature-grid-steps">
+            <article class="feature-card">
+              <span class="feature-number">01</span>
+              <h3>Send the first text</h3>
+              <p>
+                Start with your age range, what type of coverage you want to compare, or what you
+                want to protect.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number">02</span>
+              <h3>Answer a few short questions</h3>
+              <p>
+                Agustin can quickly ask what matters most, like family protection, final expense,
+                debt coverage, or long-term planning.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number">03</span>
+              <h3>Move toward the right quote</h3>
+              <p>
+                From there the next step is to compare term life, final expense, IUL, universal
+                life, or another suitable option.
               </p>
             </article>
           </div>
@@ -340,7 +463,10 @@
               <div class="cta-actions">
                 <a
                   class="button button-primary"
-                  href="sms:+17737984107?&body=Hi%20Agustin%2C%20I%20am%20interested%20in%20a%20life%20insurance%20quote."
+                  href="#"
+                  data-text-link
+                  data-text-placement="contact_primary"
+                  data-text-template="Hi Agustin, I am interested in a life insurance quote and I would like help comparing the right options."
                 >
                   Text 773 798 4107
                 </a>
@@ -427,6 +553,19 @@
           </div>
         </section>
       </main>
+    </div>
+
+    <div class="floating-cta">
+      <a class="button button-secondary" href="tel:+17737984107">Call Now</a>
+      <a
+        class="button button-primary"
+        href="#"
+        data-text-link
+        data-text-placement="floating_cta"
+        data-text-template="Hi Agustin, I want to start a life insurance quote by text."
+      >
+        Text Now
+      </a>
     </div>
 
     <script src="./app.js"></script>
