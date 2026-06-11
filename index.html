@@ -344,31 +344,47 @@
                 <span>Personal life insurance guidance</span>
               </div>
             </div>
-            <div class="hero-card">
-              <p class="hero-card-label">Quote-ready help</p>
-              <div class="hero-price-row">
-                <strong>Coverage from</strong>
-                <span>$25k to $1M+</span>
-              </div>
-              <p class="hero-card-text">
-                Text Agustin to compare coverage and move toward a real quote without waiting on a
-                generic follow-up.
+            <form class="quote-form quote-form-hero" id="quoteTextForm">
+              <p class="quote-form-title">Pre-fill your text message</p>
+              <p class="quote-form-note">
+                Add a few quick details and open a ready-to-send text to Agustin.
               </p>
-              <div class="hero-metrics">
-                <article>
-                  <strong>Direct text</strong>
-                  <span>send your info straight to Agustin</span>
-                </article>
-                <article>
-                  <strong>Personal help</strong>
-                  <span>clear answers without a confusing process</span>
-                </article>
-              </div>
-            </div>
-            <div class="floating-note">
-              <span>Why serious leads text first</span>
-              <p>Because it is the fastest path to compare options, ask direct questions, and move toward the right quote.</p>
-            </div>
+              <label>
+                First name
+                <input type="text" id="leadName" name="leadName" placeholder="Your first name" />
+              </label>
+              <label>
+                Age range
+                <select id="leadAgeRange" name="leadAgeRange">
+                  <option value="18-34">18-34</option>
+                  <option value="35-49">35-49</option>
+                  <option value="50-64">50-64</option>
+                  <option value="65+">65+</option>
+                </select>
+              </label>
+              <label>
+                Coverage interest
+                <select id="leadInterest" name="leadInterest">
+                  <option value="Term Life">Term Life</option>
+                  <option value="Final Expense">Final Expense</option>
+                  <option value="Whole Life">Whole Life</option>
+                  <option value="IUL / Universal Life">IUL / Universal Life</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </label>
+              <label>
+                Main priority
+                <select id="leadPriority" name="leadPriority">
+                  <option value="Protect my family">Protect my family</option>
+                  <option value="Cover final expenses">Cover final expenses</option>
+                  <option value="Leave a legacy">Leave a legacy</option>
+                  <option value="Compare my options">Compare my options</option>
+                </select>
+              </label>
+              <button class="button button-primary quote-form-button" type="submit">
+                Open my text message
+              </button>
+            </form>
           </aside>
         </section>
 
@@ -863,10 +879,10 @@
         </section>
 
         <section class="section cta-section" id="contact">
-          <div class="cta-panel cta-panel-form">
+          <div class="cta-panel">
             <div class="cta-copy">
-              <p class="eyebrow">Next step</p>
-              <h2>Ready to get your quote and move this forward today?</h2>
+              <p class="eyebrow">Ready to text?</p>
+              <h2>Text Agustin directly and start your quote conversation today.</h2>
               <p>
                 If you are in Chicago or a nearby suburb and you are seriously comparing life
                 insurance, text Agustin Calderon directly now so you can get into the right quote
@@ -888,47 +904,6 @@
                 </a>
               </div>
             </div>
-
-            <form class="quote-form" id="quoteTextForm">
-              <p class="quote-form-title">Pre-fill your text message</p>
-              <label>
-                First name
-                <input type="text" id="leadName" name="leadName" placeholder="Your first name" />
-              </label>
-              <label>
-                Age range
-                <select id="leadAgeRange" name="leadAgeRange">
-                  <option value="18-34">18-34</option>
-                  <option value="35-49">35-49</option>
-                  <option value="50-64">50-64</option>
-                  <option value="65+">65+</option>
-                </select>
-              </label>
-              <label>
-                Coverage interest
-                <select id="leadInterest" name="leadInterest">
-                  <option value="Term Life">Term Life</option>
-                  <option value="Final Expense">Final Expense</option>
-                  <option value="IUL / Universal Life">IUL / Universal Life</option>
-                  <option value="Not sure yet">Not sure yet</option>
-                </select>
-              </label>
-              <label>
-                Main priority
-                <select id="leadPriority" name="leadPriority">
-                  <option value="Protect my family">Protect my family</option>
-                  <option value="Cover final expenses">Cover final expenses</option>
-                  <option value="Leave a legacy">Leave a legacy</option>
-                  <option value="Compare my options">Compare my options</option>
-                </select>
-              </label>
-              <button class="button button-primary quote-form-button" type="submit">
-                Text Agustin with my details
-              </button>
-              <p class="quote-form-note">
-                This opens your text app with a message already written for you.
-              </p>
-            </form>
           </div>
         </section>
 

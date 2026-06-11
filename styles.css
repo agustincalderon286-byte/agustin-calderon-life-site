@@ -278,7 +278,7 @@ h2 {
 
 .hero-panel {
   position: relative;
-  min-height: 700px;
+  min-height: 980px;
 }
 
 .hero-card,
@@ -792,6 +792,16 @@ h2 {
   border: 1px solid rgba(16, 33, 49, 0.08);
 }
 
+.quote-form-hero {
+  position: absolute;
+  left: 72px;
+  right: 24px;
+  bottom: 24px;
+  width: auto;
+  z-index: 2;
+  background: rgba(250, 247, 242, 0.94);
+}
+
 .quote-form-title {
   margin: 0 0 4px;
   font-size: 1.15rem;
@@ -1001,7 +1011,8 @@ h2 {
 
   .portrait-frame,
   .hero-card,
-  .floating-note {
+  .floating-note,
+  .quote-form-hero {
     position: static;
   }
 
@@ -1013,6 +1024,11 @@ h2 {
   .hero-card {
     margin-bottom: 16px;
     max-width: none;
+  }
+
+  .quote-form-hero {
+    margin-top: 0;
+    width: min(420px, 100%);
   }
 
   .proof-strip,
