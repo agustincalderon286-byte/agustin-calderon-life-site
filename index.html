@@ -116,6 +116,42 @@
           <p>Term, IUL, Final Expense</p>
         </section>
 
+        <section class="section section-profile" id="about">
+          <div class="profile-grid">
+            <article class="profile-card profile-card-dark">
+              <p class="eyebrow eyebrow-dark">About Agustin</p>
+              <h2>Personal guidance instead of a confusing insurance pitch.</h2>
+              <p class="profile-copy">
+                Agustin Calderon works directly with clients who want clear answers, practical
+                options, and help understanding what type of life insurance actually fits their
+                family, stage of life, and budget.
+              </p>
+              <p class="profile-copy">
+                The goal is simple: make it easier to compare coverage, ask questions by text, and
+                move forward with more confidence.
+              </p>
+            </article>
+
+            <article class="profile-card profile-card-light">
+              <p class="eyebrow">What clients usually want help with</p>
+              <div class="profile-points">
+                <div>
+                  <strong>Income protection</strong>
+                  <span>Coverage designed to help families keep up with bills and daily life.</span>
+                </div>
+                <div>
+                  <strong>Final expense planning</strong>
+                  <span>Simple protection to reduce stress around burial and end-of-life costs.</span>
+                </div>
+                <div>
+                  <strong>Long-term planning</strong>
+                  <span>Support comparing term, IUL, universal life, and permanent options.</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section class="section section-light">
           <div class="section-heading">
             <p class="eyebrow">Why work with Agustin</p>
@@ -293,27 +329,101 @@
         </section>
 
         <section class="section cta-section" id="contact">
-          <div class="cta-panel">
-            <div>
+          <div class="cta-panel cta-panel-form">
+            <div class="cta-copy">
               <p class="eyebrow">Next step</p>
               <h2>Ready to turn visitors into quote requests?</h2>
               <p>
                 The main goal is simple: text Agustin Calderon directly so he can understand your
                 situation and help you compare the right coverage options.
               </p>
+              <div class="cta-actions">
+                <a
+                  class="button button-primary"
+                  href="sms:+17737984107?&body=Hi%20Agustin%2C%20I%20am%20interested%20in%20a%20life%20insurance%20quote."
+                >
+                  Text 773 798 4107
+                </a>
+                <a class="button button-secondary" href="tel:+17737984107">Call 773 798 4107</a>
+                <a class="button button-secondary" href="mailto:agustincalderon286@gmail.com">
+                  agustincalderon286@gmail.com
+                </a>
+              </div>
             </div>
-            <div class="cta-actions">
-              <a
-                class="button button-primary"
-                href="sms:+17737984107?&body=Hi%20Agustin%2C%20I%20am%20interested%20in%20a%20life%20insurance%20quote."
-              >
-                Text 773 798 4107
-              </a>
-              <a class="button button-secondary" href="tel:+17737984107">Call 773 798 4107</a>
-              <a class="button button-secondary" href="mailto:agustincalderon286@gmail.com">
-                agustincalderon286@gmail.com
-              </a>
-            </div>
+
+            <form class="quote-form" id="quoteTextForm">
+              <p class="quote-form-title">Pre-fill your text message</p>
+              <label>
+                First name
+                <input type="text" id="leadName" name="leadName" placeholder="Your first name" />
+              </label>
+              <label>
+                Age range
+                <select id="leadAgeRange" name="leadAgeRange">
+                  <option value="18-34">18-34</option>
+                  <option value="35-49">35-49</option>
+                  <option value="50-64">50-64</option>
+                  <option value="65+">65+</option>
+                </select>
+              </label>
+              <label>
+                Coverage interest
+                <select id="leadInterest" name="leadInterest">
+                  <option value="Term Life">Term Life</option>
+                  <option value="Final Expense">Final Expense</option>
+                  <option value="IUL / Universal Life">IUL / Universal Life</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </label>
+              <label>
+                Main priority
+                <select id="leadPriority" name="leadPriority">
+                  <option value="Protect my family">Protect my family</option>
+                  <option value="Cover final expenses">Cover final expenses</option>
+                  <option value="Leave a legacy">Leave a legacy</option>
+                  <option value="Compare my options">Compare my options</option>
+                </select>
+              </label>
+              <button class="button button-primary quote-form-button" type="submit">
+                Text Agustin with my details
+              </button>
+              <p class="quote-form-note">
+                This opens your text app with a message already written for you.
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <section class="section section-light">
+          <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>A simple process that helps people move forward faster.</h2>
+          </div>
+          <div class="feature-grid feature-grid-steps">
+            <article class="feature-card">
+              <span class="feature-number">01</span>
+              <h3>Text your situation</h3>
+              <p>
+                Share your age range, what kind of coverage you want, and what you are trying to
+                protect.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number">02</span>
+              <h3>Compare the right options</h3>
+              <p>
+                Agustin helps you compare practical choices instead of pushing a one-size-fits-all
+                solution.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number">03</span>
+              <h3>Move at your pace</h3>
+              <p>
+                Ask questions, get clarity, and decide whether term, final expense, IUL, or
+                another option makes the most sense.
+              </p>
+            </article>
           </div>
         </section>
       </main>

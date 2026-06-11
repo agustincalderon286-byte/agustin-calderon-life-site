@@ -8,6 +8,8 @@ const form = document.getElementById("coverageForm");
 const coverageResult = document.getElementById("coverageResult");
 const premiumResult = document.getElementById("premiumResult");
 const resultNote = document.getElementById("resultNote");
+const quoteTextForm = document.getElementById("quoteTextForm");
+const quotePhone = "+17737984107";
 
 function estimateCoverage({ age, income, dependents, goal }) {
   const multipliers = {
@@ -65,3 +67,24 @@ function renderEstimate(event) {
 }
 
 form.addEventListener("submit", renderEstimate);
+
+function openQuoteText(event) {
+  event.preventDefault();
+
+  const leadName = document.getElementById("leadName").value.trim() || "I";
+  const leadAgeRange = document.getElementById("leadAgeRange").value;
+  const leadInterest = document.getElementById("leadInterest").value;
+  const leadPriority = document.getElementById("leadPriority").value;
+
+  const message = [
+    `Hi Agustin, my name is ${leadName}.`,
+    `My age range is ${leadAgeRange}.`,
+    `I am interested in ${leadInterest}.`,
+    `My main priority is ${leadPriority}.`,
+    "I would like to get guidance on my life insurance options."
+  ].join(" ");
+
+  window.location.href = `sms:${quotePhone}?&body=${encodeURIComponent(message)}`;
+}
+
+quoteTextForm.addEventListener("submit", openQuoteText);
