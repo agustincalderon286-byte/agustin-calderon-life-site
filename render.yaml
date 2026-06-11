@@ -2,7 +2,6 @@ services:
   - type: web
     name: agustin-calderon-life
     runtime: static
-    plan: free
     autoDeploy: true
     buildCommand: echo "Static site ready"
     staticPublishPath: ./
