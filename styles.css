@@ -277,8 +277,9 @@ h2 {
 }
 
 .hero-panel {
-  position: relative;
-  min-height: 980px;
+  display: grid;
+  gap: 18px;
+  align-content: start;
 }
 
 .hero-card,
@@ -315,8 +316,8 @@ h2 {
 }
 
 .portrait-frame {
-  position: absolute;
-  inset: 0 24px 120px 72px;
+  position: relative;
+  min-height: 620px;
   border-radius: 34px;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(16, 31, 61, 0.06));
@@ -793,12 +794,8 @@ h2 {
 }
 
 .quote-form-hero {
-  position: absolute;
-  left: 72px;
-  right: 24px;
-  bottom: 24px;
-  width: auto;
-  z-index: 2;
+  position: relative;
+  width: 100%;
   background: rgba(250, 247, 242, 0.94);
 }
 
@@ -1005,30 +1002,14 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .hero-panel {
-    min-height: auto;
-  }
-
-  .portrait-frame,
-  .hero-card,
-  .floating-note,
-  .quote-form-hero {
-    position: static;
-  }
-
   .portrait-frame {
     margin-bottom: 16px;
     min-height: 520px;
   }
 
-  .hero-card {
-    margin-bottom: 16px;
-    max-width: none;
-  }
-
   .quote-form-hero {
     margin-top: 0;
-    width: min(420px, 100%);
+    width: 100%;
   }
 
   .proof-strip,
