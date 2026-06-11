@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agustin-calderon-life.onrender.com/sitemap.xml

@@ -77,12 +77,18 @@ function renderEstimate(event) {
 
   const estimate = estimateCoverage({ age, income, dependents, goal });
 
-  coverageResult.textContent = `${currency.format(estimate.minCoverage)} - ${currency.format(estimate.maxCoverage)}`;
-  premiumResult.textContent = `Example monthly budget: about ${currency.format(estimate.monthlyMin)} to ${currency.format(estimate.monthlyMax)}`;
-  resultNote.textContent = estimate.note;
-}
+  if (coverageResult) {
+    coverageResult.textContent = `${currency.format(estimate.minCoverage)} - ${currency.format(estimate.maxCoverage)}`;
+  }
 
-form.addEventListener("submit", renderEstimate);
+  if (premiumResult) {
+    premiumResult.textContent = `Example monthly budget: about ${currency.format(estimate.monthlyMin)} to ${currency.format(estimate.monthlyMax)}`;
+  }
+
+  if (resultNote) {
+    resultNote.textContent = estimate.note;
+  }
+}
 
 function openQuoteText(event) {
   event.preventDefault();
@@ -104,4 +110,11 @@ function openQuoteText(event) {
 }
 
 bindTextLinks();
-quoteTextForm.addEventListener("submit", openQuoteText);
+
+if (form) {
+  form.addEventListener("submit", renderEstimate);
+}
+
+if (quoteTextForm) {
+  quoteTextForm.addEventListener("submit", openQuoteText);
+}
