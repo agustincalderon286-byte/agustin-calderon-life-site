@@ -1035,6 +1035,12 @@ h2 {
     align-items: flex-start;
   }
 
+  .topbar {
+    position: static;
+    border-radius: 28px;
+    padding: 14px;
+  }
+
   h1 {
     font-size: clamp(3rem, 16vw, 5rem);
   }
@@ -1080,6 +1086,8 @@ h2 {
   }
 
   .topnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
